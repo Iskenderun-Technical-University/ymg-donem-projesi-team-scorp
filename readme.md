@@ -9,7 +9,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
--[Use Case](#usecase)
+-[Use-Case](#usecase)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -26,6 +26,9 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - What have you learned/improved?
 - Your wisdom? :)
 
+## Use-Case
+![screenshot](images/UML.png)
+
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
@@ -39,8 +42,6 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a YMG's project.
-
-## Use-Case
 
 
 
