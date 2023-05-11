@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,5 +10,111 @@
     <title>Yazılıma Başla! | CMS Group</title>
 </head>
 
+<body>
+    <h3> HTML Nedir?</h3>
+    <p>Html (HyperText Markup Language / Hareketli Metin İşaretleme Dili), internet dökümanları oluşturmaya yarayan bir
+        dildir.
+        Html, belgelerin birbirine nasıl bağlanacaklarını ve belge içindeki metin, resim ve benzeri nesnelerin nasıl
+        yerleştirilecekleri belirleyen ve etiket(tag) denilen kod parçacıklarından oluşan bir sistemdir.
+
+    <p>Html bir programlama dili değildir. Herhangi bir programlama mantığı taşımaz. Veriler içine yerleştirilen
+        etiketler, metnin dolayısıyla belgenin browser tarafından verileri nasıl işleyeneceğini belirler.
+    <p>Html dökümanı hazırlamak için gerekli olan tek şey bir editördür. Bunun için piyasada bulunan kod veya görsel
+        tabanlı bazı programları kullanılabilirsiniz.Bunun yanı sıra, bir editörünüz yoksa, html dökümanı hazırlamak
+        için size bir notepad bile yeter. Html dökümanınızı hazırladıktan sonra .htm veya .html uzantısı ile
+        kaydettiğinizde bir html dökümanına sahip olmuş olursunuz.
+
+        <hr>
+
+    <h3>HTML'in Genel Yapısı</h3>
+    <p>Html'in genel yapısı, aşağıda görüldüğü gibidir. Html dökümanları "html"...
+
+        "/html" etiketleri arasında yer alır.
+        Baş (head) ve gövde(body) olmak üzere iki ana kısımdan oluşur.
+        Head kısmında sayfa ile ilgili genel tanımlamalar yapılır. Sayfada görüntülenmesi istenilen nesneler
+        "body" .... "/body" etiketleri
+        arasına yazılır. Sayfaya yerleştirmek istenen resim, metin, tablo ve benzeri
+        tüm nesneler "body" ... "/body" etiketleri arasında yer alır.
+
+        <hr>
+
+    <h3>Metin Biçimlendirme Etiketleri</h3>
+    <p>Html'de metin stillerini belirlemenin üç yolu vardır.Bunlar;
+    <ul>
+        <li>Düzenlenmek istenilen metinin başına ve sonuna gerekli metin düzenleme etiketlerinin konulması ile yapılan
+            metin stilidir.Bu yöntem satır içi biçimlendirme olarakta bilinir.</li>
+        <li>Sayfanın head kısmına koyulan stillere body bölümden atıf yapılarak metin biçimlemedir. Bu yöntem gömülü
+            biçimlendirme olarak adlandırılır.</li>
+        <li> Html dökümanının dışında başka bir stil dosyası oluşturularak, stil için bu dosyanın kullanıldığı
+            yöntemdir. Bu yöntemde Cascading Stil Sheets(Yığılmalı Stil kağıtları-CSS) olarak adlandırılır.</li>
+    </ul>
+    Yukarıdaki metotlardan ilk metotta her metin için ayrı ayrı stil belirtirken ikinci ve üçüncü metodlarda stil bir
+    defa belirlenir ve bu stilleri istediğimiz metne uygulayabiliriz. Burada önemli olan bir diğer husus da ilk metodu
+    tüm browserlar sorunsuz yorumlarken, 2. ve 3. metotları farklı browserların, değişik şekillerde yorumlamasıdır. Bu
+    nedenlerden dolayı biz derslerimizde satır içi biçimlendirme olarak adlandırılan ilk metottan bahsedeceğiz.
+
+    <h5>Başlık Etiketleri</h5>
+    <p>Html'de altı adet başlık etiketi vardır.Bu etiketlerin birbirinden farkı, boyutlarıdır.Başlık etiketi uygulanacak
+        metin "h1" ... "h6" etiketlerinden biri ile başlar ve aynı numaralı başlık etiketi ile kapatılır.
+    <p> En büyük başlık etiketi "h1" etiketidir ve bu "h6" etiketine doğru gidildikçe küçülür. Örneğin:
+    <ul>
+        <li>h1: <h1>Başlık</h1>
+        </li>
+        <li>h2: <h2>Başlık</h2>
+        </li>
+        <li>h3: <h3>Başlık</h3>
+        </li>
+    </ul> <br>
+
+    <h5>Paragraf Etiketi</h5>
+    <p>Html'de paragraf etiketi "p"...."/p" dir. Bu etiketler araındaki metin paragraf özelliği kazanır. Etiket
+        sonlandırıldığında, takip eden metin
+        bir satır boşluk bırakılarak, satır başına yazılır.
+
+    <h5>"br" Etiketi</h5>
+    <p>"br" etiketi, satır başı yapmak için kullanılır. Browser bu etiketi görünce, geri kalan nesneleri bir altsatırdan
+        devam ettirir. "br" etiketi kapatılmadan kullanılan bir etikettir. Diğer bir çok etiket gibi "/" işareti
+        ile sonlandırılmaz.
+
+    <h5>Diğer Etiketler</h5>
+    <p>Html de, metinlerde kullanılacak diğer metin biçimlendirme etiketleri; "b", "i" ve "u"'dur.
+    <ul>
+        <li>"b" .... "/b" Aradaki metni koyu yapmaya yarar.(<b>bold</b>) </li>
+
+        <li>"i" .... "/i" Aradaki metne eğik özelliği vermeye yarar.(<i>italic</i>)</li>
+
+        <li> "u" .... "/u" Aradaki metnin altı çizili hale gelmesini sağlar.(<u>underline</u>)</li>
+    </ul>
+
+    <h5>Font Etiketleri</h5>
+    <p>Metinlere ait font ayarları "font" ..... "/font" etiketi ile yapılır.
+
+    <p>Font etiketinin kullanımı; <font face="5" size="3" color="red"> "font face= "..." size= "..." color= "..."> ...
+            "/font" </font>
+
+    <p>Font etiketinin parametreleri;
+
+        <li>face= yazıtipinin adı (arial, tahoma, verdana, ...)</li>
+        <li>size= yazının büyüklüğü (1-7 arası)</li>
+        <li>color= yazının rengi (renkleri ingilizce karşılıkları veya RGB renk değeri)</li>
+
+    <p>RGB, red-green-blue renklerinin baş harfleridir. Tüm renkler, bu üç ana rengin belli oranlarla harmanlanması
+        sonucu
+        ortaya çıkar.Bu nedenle metinlere renk verilirken ya renklerin ingilizce karşılıkları yada başına # işareti
+        koyarak
+        RGB ye ait hexidecimal değerler yazılır.
+
+    <p>Yazı tipini belirlemek için face parametresi kullanılır. Genellikle web tasarımında verdana, tahoma ve arial gibi
+        yazıtipleri tercih edilir. Bunun nedeni, bu yazıtiplerinin okuma kolaylığına ve görüntü güzelliğine sahip
+        olmasıdır.
+
+    <p>Yazı büyüklüğü, size parametresi ile ayarlanır ve yedi adet font büyüklüğü vardır. 1 ile 7 arası bu değerler,
+        yazının
+        inch veya piksel olarak büyüklüğü değil, html'e ait sayı değerleridir.
+
+
+
 </body>
+
+
 </html>
