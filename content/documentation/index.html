@@ -112,6 +112,44 @@
         yazının
         inch veya piksel olarak büyüklüğü değil, html'e ait sayı değerleridir.
 
+        <hr>
+
+        <h3>Arkaplan Ayarları</h3>
+    <p>Html sayfalarına ait arkaplan(background) ayarları "body" etiketine eklenen parametreler yardımıyla yapılır.
+        Body etiketine eklenecek parametreler ile arkaplana istediğimiz rengi verebilir, istediğimiz resmi arkaplana
+        yerleştirebiliriz.
+
+    <h5>Arkaplan Rengini Değiştirme</h5>
+    "body bgcolor= "color"> .......... "/body" <p> Arkaplan rengini değiştirmede, yazı rengini değiştirmede olduğu gibi
+        renklere ait hexidecimal kodlar veya renklerin ingilizce karşılıkları kullanılır. Örnek olarak;
+    <ul>
+        <li> "body bgcolor="gold"> .......... "/body"
+</body>
+</li>
+
+<li> "body bgcolor="#808080"> .......... "/body" </body>
+</li>
+</ul>
+
+<h5>Arkaplana Resim Ekleme</h5>
+<p> "body background= "url"> .......... "/body"
+<p>Arkaplana resim ekleme konusunda dikkat edilmesi gereken nokta eklenecek resme ait yolu doğru bir şekilde
+    belirtmektir. Web tasarımına yeni başlayanlar, genelde kullandığı html dökümanı ile kullandığı resimleri aynı klasör
+    içinde barındırırlar. Html dökümanı ile bu html dökümanına eklenecek resim aynı klasörde ise, url olarak direkt
+    resmin adını ve uzantısını yazmak yeterlidir. Örnek:
+
+    <li> "body background="zemin.gif">.......... "/body" gibi. </li>
+<p>Resimlerin farklı bir klasörde bulunması, web tasarımında doğacak karışıklıkları önlemede yararlı bir yöntemdir. Bu
+    gibi durumlarda, resimlere ait adreslemelede dikkatli olamk gerekir. Resmin yolunu belirlerken, adres yolunun tamamı
+    yazılabilir. (Örneğin; C:\OEM\Dersler\Resimler\zemin.gif gibi.) Bu yol tanımlaması, html dökümanlarının bulunduğu
+    bilgisayarda sorunsuz bir şekilde çalışır, fakat; başka bir bilgisayarda veya yapılan tasarım bir server'a
+    gönderildiğinde, belirtilen bu yol bulunamayacağı için resimlerin yerinde boşluk ve kırmızı çarpı işaretleri
+    görülür. Bu sorunları yaşamamak için web tasarımında göreceli adresleme kullanılır. Kullanım şekli aşağıdaki
+    gibidir.
+
+    <li> "body bgcolor= "color" background="url" > .......... "/body" </li>
+
+
 
 
 </body>
