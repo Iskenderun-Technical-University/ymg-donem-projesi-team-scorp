@@ -12,10 +12,13 @@
     <h1>Number guessing game</h1>
     <p id="p1">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
     <form action="#" >
-        <label for="num">Enter a guess:
-            <input id="num" type="text" value="$"/>
-            <input id="num2" type="button" value="Submit guess"/>
+        <label for="submit_btn">Enter a guess:
+            <input id="input_text" type="text" value="11"/>
+            <button id="submit_btn" type="button" value="Submit guess">Submit guess</button>
         </label>
     </form>
+    <div id="div1" class="record-previous">
+        <p>Previous guesses: </p>
+    </div>
 </body>
 </html>
