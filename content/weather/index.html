@@ -9,27 +9,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="weather-app"> 
-        <div class="left-section">
-            <h3 class="brand">Hava Durumu</h3>
-            <div class="content">
-                <h1 class="temperature"> 16&#176; </h1>
-                <div class="city-time">
-                    <h1 class="city-name">İstanbul </h1>
-                    <div class="time-and-date">
-                        <span class="time">06:09 </span>
-                        <span class="date">
-                            16.01.23||Cuma
-                        </span>
+    <div id="hava-app-sec">
+        <div id="left-section"> 
+            <h3 id="head1">Hava Durumu</h3> 
+            <div id="content"> 
+                <h1 id="temperature"> 16&#176; </h1> 
+                <div id="location-data">
+                    <h1 id="loca-name">İstanbul </h1> 
+                    <div id="time-and-date"> 
+                        <span id="loca-time">06:09 </span>
+                        <span id="loca-date"> 16.01.23||Cuma </span> 
                     </div>
                 </div>
-                <div class="weather">
+                <div id="weather-info">
                     <img src="./images/weather/64x64/day/113.png" class="icon" alt="icon" width="50" height="50" />
-                    <span class="weather-condition">Bulutlu</span>
+                    <span id="weather-condition">Bulutlu</span>
                 </div>
             </div>
         </div>
-            <div class="right-section">
+            <div id="right-section">
                 <select name="Sehir">
                     <option value="0">Konum Seçiniz</option>
                     <option value="1">Adana</option>
@@ -114,19 +112,19 @@
                     <option value="80">Osmaniye</option>
                     <option value="81">Düzce</option>
                 </select>
-                <ul class="details">
+                <ul id="footer"> 
                     <h4>Hava Detayları</h4>
                     <li>
                         <span>Bulutlu</span>
-                        <span class="dtl-cloudy">89%</span>
+                        <span id="footer-bulut">78%</span> 
                     </li>
                     <li>
                         <span>Nem</span>
-                        <span class="dtl-humidity">64%</span>
+                        <span id="footer-nem">45%</span> 
                     </li>
                     <li>
                         <span>Rüzgar</span>
-                        <span class="dtl-wind">8km/h</span>
+                        <span id="footer-rüzgar">4km/h</span> 
                     </li>
                 </ul>
             </div>
