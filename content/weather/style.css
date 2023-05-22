@@ -1,25 +1,103 @@
-/*
- KULLANILACAK FONT KODU: 
-font-family: 'Rubik', sans-serif;
-*/
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    
 }
 
 
-.left-section{
-    float: left;
+#left-section{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 45px 45px 30px;
+}
+
+#left-section #content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weather-info,
+#temperature,
+#time-and-date{
+    margin: 0 15px 0 0;
+    
+}
+
+#loca-name{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+#temperature{
+    font-size: 100px;
+    margin: 0;
+}
+
+
+h1,h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#weather-app-sec{
+    min-height: 100vh;
+    background-image: url(/content/weather/images/day_cloudy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(203, 197, 197);
+    position: relative;
+    transition: 1s;
+    opacity: 1;
+}
+
+#weather-app-sec::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 
 
-.right-section{
-    float: right;
+
+
+#right-section{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0
+    rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter:blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    padding: 45px 30px;
+    overflow-y: scroll;
 }
 
+#footer{
+    list-style-type: none;
+    line-height: 1.5;
+}
 
 
