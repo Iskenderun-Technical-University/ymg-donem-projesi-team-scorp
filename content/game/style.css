@@ -9,6 +9,7 @@ html{
 body{
     background-image: URL("../../images/space.jpg");
     background-size: contain;
+    color: #FFFBFF;
 }
 .navbar{
     font-family: 'Arial';
@@ -36,33 +37,45 @@ body{
 }
 
 
+/* Optinal CSS */
+.border{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.center{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    font-size: 25px;
+    font-family: 'Chivo Mono', monospace;
+}
+
+
 /*            BANNER            */
 .banner{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #FFFBFF;
     padding: 100px 0px;
     width: 50%;
     margin: auto;
-    
 }
 .banner h2{
     font-size: 35px;
-    font-family: 'Chivo Mono', monospace;
 }
 .banner img{
     height: 200px;
     width: 200px;
 }
 .banner p{
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
     width: 100%;
     text-align: center;
-    padding: 10px;
-    font-family: 'Chivo Mono', monospace;
+
     font-size: 25px;
 }
 .banner form{
@@ -73,36 +86,14 @@ body{
 
 /*          HIDE AND GO SECTION        */
 .hide-and-go{
-    font-size: 20px;
-    color: #FFFBFF;
-    font-family: 'Chivo Mono', monospace;
+ 
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    text-align: center;
     padding: 100px 0px;
-}
-.hide-and-go h2{
-    border-bottom: 2px solid white;
-    width: 76%;
-    padding-bottom: 20px;
-}
-
-.hide-and-go p{
-    width: 75%;
-    padding-top: 15px;
-}
-.hide-and-go span{
-    font-weight: bold;
-}
-.hide-and-go .subParag{
-    font-style: italic;
-    border-bottom: 2px solid white;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
 }
 .hide-and-go .img-box{
     border: 3px solid goldenrod;
@@ -115,27 +106,30 @@ body{
 }
 
 
+/*          NUMBER SECTION        */
+#oyun3{
+    text-align: center;
+    width: 80%;
+    margin: auto;   
+}
+#oyun3 h2{
+    font-size: 35px;
+}
+#oyun3 p{
+    font-size: 25px;
+}
 
 /*      COMMENT SECTION       */
 .glitter{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin: auto;
+    text-align: left;
 }
 .glitter h1{
-    color: white;
     font-size: 100px;
-    margin: 0px;
-    padding-bottom: 30px;
     font-family: 'Arial';
-}
-.glitter p{
-    font-size: 20px;
-    color: white;
-    font-family: 'Chivo Mono', monospace;
-    font-weight: normal;
 }
 .glitter li{
     display: flex;
@@ -143,9 +137,6 @@ body{
 }
 .glitter .comments{
     padding: 20px 30px;
-}
-.glitter li p{
-    margin: 0px;
 }
 .glitter img{
     width: 4%;
