@@ -5,7 +5,7 @@ if (typeof document !== 'undefined'){
     let branching = 99;
     let c = 0;
     
-    //  Gritty Rotation Station
+    //  Gritty Rotation Stationa
     let rotateLeft = document.querySelector("#left");
     let rotateRight = document.querySelector("#right");
     let rotation = 0
