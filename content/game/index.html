@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <h1>Number guessing game</h1>
-    <p id="p1">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-    <form action="#" >
-        <label for="submit_btn">Enter a guess:
-            <input id="input_text" type="text" value="11"/>
-            <button id="submit_btn" type="button" value="Submit guess">Submit guess</button>
-        </label>
-    </form>
-    <div id="div1" class="record-previous">
-        <p>Previous guesses: </p>
-    </div>
-</body>
+<html>
+    <head>
+        <title>Grit</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+        <!-- FONTLAR -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div>
+                <a href="" class="home">Grit</a>
+                <a href="#oyun1">Gritty Çevirmece</a>
+                <a href="#oyun2">Gritty'i Sakla</a>
+                <a href="#oyun3">Gizli Gritty Sayısı</a>
+                <a href="#oyun4">Gritter</a>
+            </div>
+        </nav>
+        <div id="oyun1" class="banner">
+            <h2>Gritty Çevirmec</h2>
+            <img src="./assets/better_than_drake.png" alt="" id="rotatedIMG">
+            <p>Aşağıdaki butonlara basarak Gritty'i 15 derece çevir.</p>
+            <form>
+                <input id="left" type="button" value="Rotate-Left">
+                <input id="right" type="button" value="Rotate-Right">
+            </form>
+        </div>
+        <div>
+
+        <div id="oyun2" class="hide-and-go">
+            <h2>Gritty'i Sakla</h2>
+            <p>EventListener'lar ve EventHandler'lar kümesi, bir sitenin kullanıcılarınızın eylemine nasıl tepki vermesi gerektiğini tanımlama olanağı sağlar. Örneğin, 
+                bir kullanıcı sitenizdeki<span>bir öğenin üzerine geldiğinde bir olayı tetikleyebilirsiniz</span>.
+            </p>
+            <p class="subParag">
+                Fare olaylarıyla sınırlı değilsiniz, kullanıcılar klavyeleriyle etkileşime girdiğinde önemli olayları da tanımlayabilirsiniz.
+            </p>
+            <div class="img-box">
+                <img id="hiddenIMG" src="./assets/better_than_drake.png">
+            </div>
+        </div>
+
+        <div id="oyun4" class="glitter">
+            <h1 id="test">Gritter</h1>
+            <p>Gritty'ye özel sosyal medya. Yorum ekleyebilirsiniz ama bir veritabanı bulunmuyor :)</p>
+            <form>
+                <input id="ehe" type='text' name="greet"/>
+                <input id="sbmt" type="button" value="Share">
+            </form>
+            <div class="comments">
+                <ul id="myList">
+                    <li><img src="./assets/better_than_drake.png" alt="n"><p>Eeheheh Tekrar ben.</p></li>
+                    <li><img src="./assets/better_than_drake.png"><p>Baharlar gelemiyor :(</p></li>
+                    <li><img src="./assets/better_than_drake.png"><p>Zort.</p></li>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
+
+
+

@@ -1,5 +1,153 @@
+*{
+    margin-top: 0px;
+    padding: 0px;
+    margin:0px;
+}
+html{
+    scroll-padding-top: 168px; 
+}
 body{
-    width: 42%;
-    margin: 0 auto;
-    font-family:sans-serif;
+    background-image: URL("../../images/space.jpg");
+    background-size: contain;
+}
+.navbar{
+    font-family: 'Arial';
+    font-size: 25px;  
+	position: sticky;
+    width: 100%;
+	top: 0;
+    z-index: 2;
+    background-color: #2A2B2F;
+    opacity: 0.9;
+    border-top: 1px solid rgb(105, 99, 99);
+    border-bottom: 1px solid rgb(105, 99, 99);
+}
+.navbar div{
+    display: flex;
+    margin-left: 70px;
+}
+.navbar .home{
+    color: rgb(233, 201, 201);
+}
+.navbar a{
+    color: white;
+    padding: 70px 40px;
+    text-decoration: none;
+}
+
+
+/*            BANNER            */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFBFF;
+    padding: 100px 0px;
+    width: 50%;
+    margin: auto;
+    
+}
+.banner h2{
+    font-size: 35px;
+    font-family: 'Chivo Mono', monospace;
+}
+.banner img{
+    height: 200px;
+    width: 200px;
+}
+.banner p{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 25px;
+}
+.banner form{
+    padding-top: 10px;
+    opacity: 1;
+}
+
+
+/*          HIDE AND GO SECTION        */
+.hide-and-go{
+    font-size: 20px;
+    color: #FFFBFF;
+    font-family: 'Chivo Mono', monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 100px 0px;
+}
+.hide-and-go h2{
+    border-bottom: 2px solid white;
+    width: 76%;
+    padding-bottom: 20px;
+}
+
+.hide-and-go p{
+    width: 75%;
+    padding-top: 15px;
+}
+.hide-and-go span{
+    font-weight: bold;
+}
+.hide-and-go .subParag{
+    font-style: italic;
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.hide-and-go .img-box{
+    border: 3px solid goldenrod;
+    width: 15%;
+    min-width: 190px;
+}
+.hide-and-go img{
+    width: 100%;
+    min-width: 190px;
+}
+
+
+
+/*      COMMENT SECTION       */
+.glitter{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.glitter h1{
+    color: white;
+    font-size: 100px;
+    margin: 0px;
+    padding-bottom: 30px;
+    font-family: 'Arial';
+}
+.glitter p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+    font-weight: normal;
+}
+.glitter li{
+    display: flex;
+    align-items: center;
+}
+.glitter .comments{
+    padding: 20px 30px;
+}
+.glitter li p{
+    margin: 0px;
+}
+.glitter img{
+    width: 4%;
+    min-width: 60px;
 }
