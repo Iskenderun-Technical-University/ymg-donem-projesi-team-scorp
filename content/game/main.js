@@ -53,5 +53,54 @@ if (typeof document !== 'undefined'){
     }
     const submitBTN = document.querySelector("#sbmt")
     submitBTN.addEventListener("click",gritter);
+
+
+
+
+
+
+
+
+
+
+    
+    //find num
+    const button = document.getElementById("submit_btn");
+    const record_text = document.getElementById("record").childNodes[1];
+    const target = generateRange0to100();
+    let counter = 0;
+
+    button.addEventListener("click", findNumber);
+
+
+    //this function generates number between 0 and 100. (100 is inclusive)
+    function generateRange0to100(){
+        return Math.floor(Math.random()*101);
+        };
+
+    //this function compares the value of parameter with data provided by user.
+    function findNumber(){
+        const user_data = document.getElementById("input_text").value; // get data by input
+
+        if(user_data == "")
+        {
+
+        }
+        else{
+            if(counter != 5){
+                counter++;
+                record_text.innerHTML = record_text.innerHTML + " " + user_data;
+            //alert(user_data);
+            }
+            else{
+                alert("bitti" + counter);
+            }
+        }
+    };
+/*
+const record_div = document.getElementById("div1");
+record_div.style.backgroundColor = "red";
+const roundCounter = 1;
+*/
 }
 
