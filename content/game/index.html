@@ -22,10 +22,10 @@
                 <a href="#oyun4">Gritter</a>
             </div>
         </nav>
-        <div id="oyun1" class="banner">
-            <h2>Gritty Çevirmec</h2>
+        <div id="oyun1" class="banner center">
+            <h2>Gritty Çevirmece</h2>
             <img src="./assets/better_than_drake.png" alt="" id="rotatedIMG">
-            <p>Aşağıdaki butonlara basarak Gritty'i 15 derece çevir.</p>
+            <p class="border">Aşağıdaki butonlara basarak Gritty'i 15 derece çevir.</p>
             <form>
                 <input id="left" type="button" value="Rotate-Left">
                 <input id="right" type="button" value="Rotate-Right">
@@ -33,20 +33,38 @@
         </div>
         <div>
 
-        <div id="oyun2" class="hide-and-go">
+        <div id="oyun2" class="hide-and-go center">
             <h2>Gritty'i Sakla</h2>
-            <p>EventListener'lar ve EventHandler'lar kümesi, bir sitenin kullanıcılarınızın eylemine nasıl tepki vermesi gerektiğini tanımlama olanağı sağlar. Örneğin, 
-                bir kullanıcı sitenizdeki<span>bir öğenin üzerine geldiğinde bir olayı tetikleyebilirsiniz</span>.
-            </p>
-            <p class="subParag">
-                Fare olaylarıyla sınırlı değilsiniz, kullanıcılar klavyeleriyle etkileşime girdiğinde önemli olayları da tanımlayabilirsiniz.
-            </p>
-            <div class="img-box">
+            <div class="border"> 
+                <p>
+                    EventListener'lar ve EventHandler'lar kümesi, bir sitenin kullanıcılarınızın eylemine nasıl tepki vermesi gerektiğini tanımlama olanağı sağlar. Örneğin, 
+                    bir kullanıcı sitenizdeki<strong>bir öğenin üzerine geldiğinde bir olayı tetikleyebilirsiniz</strong>.
+                </p>
+                <br>
+                <i>
+                    Fare olaylarıyla sınırlı değilsiniz, kullanıcılar klavyeleriyle etkileşime girdiğinde önemli olayları da tanımlayabilirsiniz.
+                </i>
+            </div>
+            <div class="img-box ">
                 <img id="hiddenIMG" src="./assets/better_than_drake.png">
             </div>
         </div>
 
-        <div id="oyun4" class="glitter">
+        <div id="oyun3" class="find-num center">
+            <h2>Gizli Sayıyı Bul</h2>
+            <p id="p1" class="border">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+            <form action="#" >
+                <label for="submit_btn">Enter a guess:
+                    <input id="input_text" type="text" value=""/>
+                    <button id="submit_btn" type="button" value="Submit guess">Submit guess</button>
+                </label>
+            </form>
+            <div id="record" class="record-previous">
+                <p>Previous guesses: </p>
+            </div>
+        </div>
+
+        <div id="oyun4" class="glitter center">
             <h1 id="test">Gritter</h1>
             <p>Gritty'ye özel sosyal medya. Yorum ekleyebilirsiniz ama bir veritabanı bulunmuyor :)</p>
             <form>
