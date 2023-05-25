@@ -13,10 +13,10 @@ header{
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    background-color: #2A2B2F;
-    opacity: 0.9;
     font-size: 22px;
     font-family: "Space Mono", sans-serif;
+    background-color: #2A2B2F;
+    opacity: 0.9;
     border-top: 1px solid rgb(105, 99, 99);
     border-bottom: 1px solid rgb(105, 99, 99);
 }

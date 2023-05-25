@@ -53,6 +53,10 @@ body{
     font-size: 25px;
     font-family: 'Chivo Mono', monospace;
 }
+.toFindNumberTexts{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 
 /*            BANNER            */
@@ -111,6 +115,9 @@ body{
     text-align: center;
     width: 80%;
     margin: auto;   
+}
+#oyun3 form{
+    padding-bottom: 15px;
 }
 #oyun3 h2{
     font-size: 35px;

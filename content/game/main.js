@@ -69,7 +69,6 @@
     message_text.innerHTML = "HATALI TAHMİN";
     hint_text.innerHTML= "";
 
-
     button.addEventListener("click", findNumber);
 
     //this function generates number between 0 and 100. (100 is inclusive)
@@ -85,10 +84,12 @@
             record_div.appendChild(record_text);
             record_div.appendChild(message_text);
             record_div.appendChild(hint_text);
+            record_text.className = "toFindNumberTexts";
+            message_text.className = "toFindNumberTexts";
+            hint_text.className = "toFindNumberTexts";
         }
-
         if(user_data == "")
-        {   
+        {                                                                               
             if(counter != 5){
                 counter++;
                 record_text.innerHTML = record_text.innerHTML + " " + 0;
@@ -96,8 +97,9 @@
             }
             else{
                 message_text.innerHTML = "Kaybettin :(";
-            }
-        }
+                message_text.style.backgroundColor = "red";
+            } 
+        }                                                                                          
         else{
             if(counter != 5){
                 counter++;
