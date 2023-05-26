@@ -1,7 +1,7 @@
 *{
     margin-top: 0px;
     padding: 0px;
-    margin:0px;
+    margin: 0px;
 }
 html{
     scroll-padding-top: 168px; 
@@ -10,30 +10,6 @@ body{
     background-image: URL("../../images/space.jpg");
     background-size: contain;
     color: #FFFBFF;
-}
-.navbar{
-    font-family: 'Arial';
-    font-size: 25px;  
-	position: sticky;
-    width: 100%;
-	top: 0;
-    z-index: 2;
-    background-color: #2A2B2F;
-    opacity: 0.9;
-    border-top: 1px solid rgb(105, 99, 99);
-    border-bottom: 1px solid rgb(105, 99, 99);
-}
-.navbar div{
-    display: flex;
-    margin-left: 70px;
-}
-.navbar .home{
-    color: rgb(233, 201, 201);
-}
-.navbar a{
-    color: white;
-    padding: 70px 40px;
-    text-decoration: none;
 }
 
 
@@ -53,11 +29,37 @@ body{
     font-size: 25px;
     font-family: 'Chivo Mono', monospace;
 }
+.space{
+    padding: 100px 0px;
+}
 .toFindNumberTexts{
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+/*        NAVBAR        */
+.navbar{
+    font-family: 'Arial';
+    font-size: 25px;  
+	position: sticky;
+    width: 100%;
+	top: 0;
+    z-index: 1;
+    background-color: #2A2B2F;
+    opacity: 0.9;
+    border-top: 1px solid rgb(105, 99, 99);
+    border-bottom: 1px solid rgb(105, 99, 99);
+    display: flex;
+    justify-content: center;
+}
+.navbar .home{
+    color: rgb(233, 201, 201);
+}
+.navbar a{
+    color: white;
+    padding: 40px 40px;
+    text-decoration: none;
+}
 
 /*            BANNER            */
 .banner{
@@ -65,7 +67,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 0px;
     width: 50%;
     margin: auto;
 }
@@ -79,7 +80,6 @@ body{
 .banner p{
     width: 100%;
     text-align: center;
-
     font-size: 25px;
 }
 .banner form{
@@ -90,14 +90,10 @@ body{
 
 /*          HIDE AND GO SECTION        */
 .hide-and-go{
- 
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding: 100px 0px;
 }
 .hide-and-go .img-box{
     border: 3px solid goldenrod;
@@ -119,6 +115,10 @@ body{
 #oyun3 form{
     padding-bottom: 15px;
 }
+#oyun3 form input,button{
+    padding: 5px;
+    font-size: 25px;
+}
 #oyun3 h2{
     font-size: 35px;
 }
@@ -128,7 +128,6 @@ body{
 
 /*      COMMENT SECTION       */
 .glitter{
-    padding: 30px;
     display: flex;
     flex-direction: column;
     margin: auto;

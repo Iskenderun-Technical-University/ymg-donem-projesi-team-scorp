@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="TR-tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <h1>Adam Asmaca</h1>
-    <p>Gizli kelimeyi bulun - Mesaj girin</p>
-    <div class="game-container">
-        <svg height="250" width="200" class="figure-container">
-            <line x1="60" y1="20" x2="140" y2="20" />
-            <line x1="1400" y1="20" x2="140" y2="50" />
-            <line x1="60" y1="20" x2="60" y2="230" />
-            <line x1="20" y1="230" x2="100" y2="230" />
-
-            <!-- Head -->
-            <circle cx="140" cy="70" r="20" class="figure-part" />
-
-            <!-- Body -->
-            <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
-
-            <!-- Arms -->
-            <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
-
-            <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
-
-            <!-- Legs -->
-            <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
-
-            <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
-        </svg>
-    </div>
-
-    <div class="wront-letters-container">
-        <div id="wrong-letters"></div>
-
-        <div class="word" id="word"></div>
-    </div>
-
-    <!-- Container for final message -->
-    <div class="popup-container" id="popup-container">
-        <div class="popup">
-            <h2 id="final-message"></h2>
-            <button id="play-button">Tekrar Oyna</button>
+        <!-- FONTLAR -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <h1>- Adam Asmaca -</h1>
+        <p>Gizli kelimeyi bulun - Mesaj girin</p>
+        <div class="game-container">
+            <svg height="250" width="200" class="adam-container">
+                <line x1="60" y1="20" x2="140" y2="20" />
+                <line x1="1400" y1="20" x2="140" y2="50" />
+                <line x1="60" y1="20" x2="60" y2="230" />
+                <line x1="20" y1="230" x2="100" y2="230" />
+                <circle cx="140" cy="70" r="20" class="adam-bölüm" />
+                <line x1="140" y1="90" x2="140" y2="150" class="adam-bölüm" />
+                <line x1="140" y1="120" x2="120" y2="100" class="adam-bölüm" />
+                <line x1="140" y1="120" x2="160" y2="100" class="adam-bölüm" />
+                <line x1="140" y1="150" x2="120" y2="180" class="adam-bölüm" />
+                <line x1="140" y1="150" x2="160" y2="180" class="adam-bölüm" />
+            </svg>
         </div>
-    </div>
-
-    <!-- Notification -->
-    <div class="notification-container" id="notification-container">
-        <p>Bu harfi daha önce girdiniz</p>
-    </div>
-
-
-
-    <script src="script.js"></script>
-</body>
-
+        <div class="wront-letters-container">
+            <div id="wrong-letters"></div>
+            <div class="word" id="harf"></div>
+        </div>
+        <div class="popup-container" id="popup-container">
+            <div class="popup">
+                <h2 id="final-message"></h2>
+                <button id="play-button">Tekrar Oyna</button>
+            </div>
+        </div>
+        <div class="bildirim-box" id="bildirim-box">
+            <p>Bu harfi daha önce girdiniz</p>
+        </div>
+    </body>
 </html>

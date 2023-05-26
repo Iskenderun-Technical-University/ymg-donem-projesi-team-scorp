@@ -1,11 +1,11 @@
 
     
-    // Defaults
+    //----Defaults
     document.getElementsByName("greet")[0].placeholder = "Bir şeyler yaz...";
     let branching = 99;
     let c = 0;
     
-    //  Gritty Rotation Stationa
+    //----Gritty Rotation Stationa
     let rotateLeft = document.querySelector("#left");
     let rotateRight = document.querySelector("#right");
     let rotation = 0
@@ -21,7 +21,7 @@
     rotateRight.addEventListener("click",Right);
 
 
-    //  Hide and Go Gritty
+    //----Hide and Go Gritty
     let myBorder = document.getElementsByClassName("img-box")[0];
     let myImage = document.getElementById("hiddenIMG");
     function hide(){
@@ -34,7 +34,7 @@
     myBorder.addEventListener("mouseout", show);
 
 
-    //   Gritter
+    //----Gritter
     function gritter(){
         var newLI = document.createElement("LI");
         var newIMG = document.createElement("IMG");
@@ -56,7 +56,7 @@
 
 
 
-    //find num
+    //----find num
     const button = document.getElementById("submit_btn");
     const target = generateRange0to100();
     const record_div = document.getElementById("record");
@@ -75,7 +75,12 @@
     function generateRange0to100(){
         return Math.floor(Math.random()*101);
     };
-    
+
+    //Generate rePlay button
+    function rePlay() {
+        button.innerHTML = "Tekrar Oyna!";
+    }
+
     //this function compares the value of parameter with data provided by user.
     function findNumber(){
         const user_data = document.getElementById("input_text").value; // get data by input
@@ -90,7 +95,7 @@
         }
         if(user_data == "")
         {                                                                               
-            if(counter != 5){
+            if(counter != 4 && user_data != target){
                 counter++;
                 record_text.innerHTML = record_text.innerHTML + " " + 0;
                 hint_text.innerHTML  = "Çok düşük!!!";
@@ -98,28 +103,42 @@
             else{
                 message_text.innerHTML = "Kaybettin :(";
                 message_text.style.backgroundColor = "red";
+                rePlay();
             } 
         }                                                                                          
         else{
             if(counter != 5){
                 counter++;
-
                 if(user_data == target)
                 {
-                    //record_text.innerHTML = record_text.innerHTML + " " + user_data;
-                    alert("kazandın");
+                    record_text.innerHTML = record_text.innerHTML + " " + user_data;
+                    message_text.innerHTML = "Kazandınnn :)))";
+                    message_text.style.backgroundColor = "green";
                 }
                 else if(user_data < target){
-                    // too low
+                    record_text.innerHTML = record_text.innerHTML + " " + user_data;
+                    document.getElementById('input_text').value = '';
+                    message_text.innerHTML = "Devam etttt.";
+                    message_text.style.backgroundColor = "black";
+                    hint_text.innerHTML = "Biraz daha yukarı...";
+                }
+                else{
+                    record_text.innerHTML = record_text.innerHTML + " " + user_data;
+                    document.getElementById('input_text').value = '';
+                    message_text.innerHTML = "Devam etttt.";
+                    message_text.style.backgroundColor = "black";
+                    hint_text.innerHTML = "Biraz daha aşağı...";
                 }
             }
             else{
                 message_text.innerHTML = "Kaybettin :(";
+                message_text.style.backgroundColor = "red";
+                rePlay();
             }
         }
     };
 
-
+    
 
     
 
