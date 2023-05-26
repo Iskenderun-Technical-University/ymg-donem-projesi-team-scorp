@@ -183,6 +183,162 @@
 </ul>
 <hr>
 
+<h3> Listeler </h3>
+<p>Html ile üç türlü liste hazırlanabilir.
+
+<ul>
+    <li> Sıralı Listeler (Ordered list)</li>
+    <li> Sırasız Listeler (Unordered list)</li>
+    <li> Tanımlama Listeleri (Definition list)</li>
+</ul>
+<p>Sıralı listeler rakam veya harf yada her ikisini içiçe kullanarak liste oluşturmamızı, sırasız listeler rakam veya
+    harf
+    yerine madde imleri koyarak liste oluşturmamızı sağlar. Tanımlama listeleri ise bir listeden çok kalabalık
+    metinlerde
+    okumayı kolaylaştırmaya yardımcı olabilecek bir araçtır.
+
+<h5>Sıralı Listeler</h5>
+<p>Liste içine alınacak metinler "ol" ... "/ol" etiketleri arasına alınarak yazılır. Bu etiketler listenin
+    başladığını ve bittiğini belirtir. Listenin maddelerinin başına ise "li" etiketi getirilir.
+
+<p>"ol" etiketine parametreler ekleyebiliriz.
+<ul>
+    <li>type = Listenin rakamla mı harfle mi başlayacağını belirtmek için kullanlır.</li>
+
+    <li> start = Listenin hangi harf yada rakam ile başlayacağını belirtmek için kullanılır.</li>
+</ul>
+
+Sıralı listelemede bu parametrelerin kullanılması zorunlu değildir. Varsayılan olarak sıralı listeler, rakamla
+gösterilir ve 1 ile başlar. Örneğin:
+<p>Sirali Liste 1:<br>
+<ol>
+    <li>Bilgisayar
+    <li>Elektronik
+    <li>Otomotiv
+</ol>
+
+<br>Sirali Liste 2:<br>
+<ol type="a">
+    <li>Bilgisayar
+    <li>Elektronik
+    <li>Otomotiv
+</ol>
+
+<br>Sirali Liste 3:<br>
+<ol type="1" start="3">
+    <li>Bilgisayar
+    <li>Elektronik
+    <li>Otomotiv
+</ol>
+
+<h5>Sırasız Listeler</h5>
+
+<p>Sırasız listelemede de aynı mantık kullanılır.Fark, listeleme yaparken maddelerin başına harf, rakam gibi unsurlar
+    yerine yuvarlak, kare, daire gibi unsurların kullanabilmesidir.
+    "ol" etiketi yerine "ul" etiketini kullanılır, liste maddeleri için kullandığımız "li" etiketi burada da geçerlidir.
+
+<p> Type parametresinde kullanıbilecek unsurlar; disc (içi dolu daire), circle (içi boş daire), square (içi dolu
+    kare)'dir.
+    <br> <br>
+    Sırasız Liste 1:<br>
+<ul>
+    <li>Bilgisayar
+    <li>Elektronik
+    <li>Otomotiv
+</ul>
+<p> Listeler iç içe yapılabilir. Örneğin; <br> <br> Sırasız Liste 2:<br>
+<ul type="square">
+    <li>Bilgisayar
+        <ul type="circle">
+            <li>Donanim
+            <li>Yazilim
+        </ul>
+    <li>Elektronik
+    <li>Otomotiv
+</ul>
+
+<hr>
+
+<h3>Tablolar</h3>
+<p>Tablolar, sayfaları satırlara ve sütunlara bölmek ya da metin veya grafiklerin sayfada istediğimiz yerde durmasını
+    sağlamak için kullanabileceğimiz Html in en önemli yapıtaşlarındandır.
+<p>Tablolar satırlar ve sütunlardan meydana gelir. Html de tablo oluşturmak için "table", satır oluşturmak için "tr",
+    sütun oluşturmak için "td" etiketleri kullanılır.
+<p>Tablo oluşturma etiketinin genel yapısı:
+
+    "table border="sayı" height="oran veya sayı" width="oran veya sayı" align="hiza" bgcolor="renk"> ........ "/table"
+<p> Buradaki border = tablonun kenar kalınlığı, height = tablonun yükseliği, width = tablonun genişliği, align =
+    tablonun sayfa içindeki hizası, bgcolor = tablonun arkaplan rengi'dir. Örnek olarak:
+
+<p>1.Tablo (kod hali)<br>
+    "table"
+    "tr"
+    "td"1.Hücre"/td"
+    "td"2.Hücre"/td"
+    "/tr"
+    "tr"
+    "td"3.Hücre"/td"
+    "td"4.Hücre"/td"
+    "/tr"
+    "/table"
+    <br> <br>
+    2.Tablo<br>
+<table border="1" align="left">
+    <tr>
+        <td>1.Hücre</td>
+        <td>2.Hücre</td>
+    </tr>
+    <tr>
+        <td>3.Hücre</td>
+        <td>4.Hücre</td>
+    </tr>
+</table> <br> <br> <br> <br>
+
+<p>
+<h5>Tablolarda Satır ve Sutün Birleştirme</h5>
+<p>Tablo oluştururken, istenilen satır veya sütunlar birleştirilebilir.
+<dl>
+    <dd>rowspan = "Birleştirilecek satır sayısı"</dd>
+
+    <dd>colspan&nbsp; = "Birleştirilecek sütun sayısı"</dd>
+</dl>
+Örnekler;
+
+<li>
+    <td rowspan="2">Hücre içeriği</td> ==> İki satır birleştirilmiş
+</li>
+<li>
+    <td colspan="3">Hücre içeriği</td> ==> Üç sütun birleştirilmiş
+</li>
+<table border="1" align="center" width="200">
+    <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+        <td colspan="2">3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td rowspan="2">9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+    </tr>
+</table>
+
+<hr>
 
 
 
