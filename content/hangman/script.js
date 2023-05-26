@@ -1,4 +1,4 @@
-const kelimeler = ['Oyun', 'Oyun', 'Oyun', 'Oyun', 'Oyun'];
+const kelimeler = ['Yazılım', 'Computer', 'Pyhton', 'Deneme', 'Sahil'];
 let seçilenKelime = kelimeler[Math.floor(Math.random() * kelimeler.length)];
 const harfSeç = document.getElementById('harf');
 const hataHarf = document.getElementById('wrong-letters');
@@ -25,9 +25,10 @@ function güncelleHatalıHarf(){
         }
     });
     if(yanlisHarf.length === adamParça.length){
+        sonuc.style.fontSize = "60px";
         sonuc.innerText = 'Kaybettin!!';
         uyari.style.display = 'flex';
-        uyari.style.backgroundColor = "#0e0606";
+        uyari.style.background = "rgba(11, 4, 51, 0.237)";
     }
 }
 
@@ -51,8 +52,9 @@ function harfPrint(){
     const doldurKelime = harfSeç.innerText.replace(/\n/g, '');
     if(doldurKelime === seçilenKelime){
         sonuc.innerText = 'Dogru Tahmin!';
+        sonuc.style.fontSize = "60px";
         uyari.style.display= 'flex';
-        uyari.style.backgroundColor = "#0e0606";
+        uyari.style.background = "rgba(11, 4, 51, 0.237)";
     }
 }
 

@@ -79,6 +79,8 @@
     //Generate rePlay button
     function rePlay() {
         button.innerHTML = "Tekrar Oyna!";
+
+
     }
 
     //this function compares the value of parameter with data provided by user.
@@ -104,6 +106,7 @@
                 record_text.innerHTML = record_text.innerHTML + " " + 0;
                 message_text.innerHTML = "Kaybettin :(";
                 message_text.style.backgroundColor = "red";
+                hint_text.remove();
                 rePlay();
             } 
         }                                                                                          
@@ -115,6 +118,8 @@
                     record_text.innerHTML = record_text.innerHTML + " " + user_data;
                     message_text.innerHTML = "Kazandınnn :)))";
                     message_text.style.backgroundColor = "green";
+                    hint_text.remove();
+                    rePlay();
                 }
                 else if(user_data < target){
                     record_text.innerHTML = record_text.innerHTML + " " + user_data;
@@ -133,7 +138,8 @@
             }
             else{
                 record_text.innerHTML = record_text.innerHTML + " " + user_data;
-                message_text.innerHTML = "Kaybettin :(";
+                message_text.innerHTML = "Kaybettin :(    Cevap: " + target;
+                hint_text.remove();
                 message_text.style.backgroundColor = "red";
                 rePlay();
             }

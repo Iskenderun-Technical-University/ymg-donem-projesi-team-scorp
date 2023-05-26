@@ -3,17 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-color: #0e0606;
+    background-image: URL("/../images/space.jpg");
+    background-size: contain;
+}
+.main-container{
+    background:rgba(11, 4, 51, 0.237);
     color: #fff;
     font-family: "Space Mono", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-    margin: 20px auto;
+    height: 100vh;
+    padding: 20px auto;
+    overflow-y: hidden;
 }
 
 .game-container{
@@ -35,10 +39,8 @@ body{
     display: none;
 }
 
-.wrong-letters-container{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+#wrong-letters{
+    padding-bottom: 100px;
 }
 
 .wrong-letters-container p{
@@ -105,21 +107,4 @@ body{
 
 .popup button:focus{
     outline: 0;
-}
-
-.notification-container{
-    background-color: rgba(0,0,0,0,3);
-    border-radius: 10px 10px 0 0;
-    padding: 15px 20px;
-    position: absolute;
-    bottom: -50px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.notification-container p{
-    margin: 0;
-}
-
-.notification-container.show{
-    transform: translateY(-50px);
 }
