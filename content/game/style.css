@@ -118,6 +118,7 @@ body{
 #oyun3 form input,button{
     padding: 5px;
     font-size: 25px;
+    opacity: 0.9;
 }
 #oyun3 h2{
     font-size: 35px;

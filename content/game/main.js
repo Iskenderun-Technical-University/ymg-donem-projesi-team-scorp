@@ -101,13 +101,14 @@
                 hint_text.innerHTML  = "Çok düşük!!!";
             }
             else{
+                record_text.innerHTML = record_text.innerHTML + " " + 0;
                 message_text.innerHTML = "Kaybettin :(";
                 message_text.style.backgroundColor = "red";
                 rePlay();
             } 
         }                                                                                          
         else{
-            if(counter != 5){
+            if(counter != 4 || user_data == target){
                 counter++;
                 if(user_data == target)
                 {
@@ -131,6 +132,7 @@
                 }
             }
             else{
+                record_text.innerHTML = record_text.innerHTML + " " + user_data;
                 message_text.innerHTML = "Kaybettin :(";
                 message_text.style.backgroundColor = "red";
                 rePlay();

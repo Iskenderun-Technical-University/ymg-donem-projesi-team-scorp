@@ -27,6 +27,7 @@ function güncelleHatalıHarf(){
     if(yanlisHarf.length === adamParça.length){
         sonuc.innerText = 'Kaybettin!!';
         uyari.style.display = 'flex';
+        uyari.style.backgroundColor = "#0e0606";
     }
 }
 
