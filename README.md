@@ -3,20 +3,19 @@
 
 ## Table of Contents
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
-- [Use-Case](#usecase)
+- [Use Case](#use-case)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
 ![screenshot](images/overview.png)
 
-
-## Use-Case
+## Use Case
 ![screenshot](images/UML.png)
 
-### Built With
+## Built With
 - [HTML](https://www.w3schools.com/html/default.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -28,9 +27,12 @@ The web page includes apps that contain weather rapor, quiz app, document for wh
 
 ## Acknowledgements
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
-- [doldurulacak](https://404-not-found-test1.netlify.app/)
-- [doldurulacak](https://404-not-found-test1.netlify.app)
-- [doldurulacak](https://404-not-found-test1.netlify.app)
+- [MDN - JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+- [W3 - JavaScript](https://www.w3schools.com/js/js_htmldom.asp)
+- [To fix problems](https://stackoverflow.com)
+
+## Extracted parts
+> The weather app has been extracted due to the discontinuation of the API support.
 
 ## Contact
 - Linkedin [Cansın](https://www.linkedin.com/in/cansın-lale-64a098130/)
