@@ -13,7 +13,7 @@
 
 
 ## Overview
-![screenshot](images/overview2.png)
+![screenshot](images/overview.png)
 
 ## Use Case
 ![screenshot](images/UML.png)
