@@ -3,14 +3,17 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [Use Case](#use-case)
 - [Built With](#built-with)
 - [Features](#features)
-- [Use Case](#use-case)
-- [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
+- [Extracted parts](#contact)
+- [Contact](#contact)
+
+
 
 ## Overview
-![screenshot](images/overview.png)
+![screenshot](images/overview2.png)
 
 ## Use Case
 ![screenshot](images/UML.png)
@@ -22,8 +25,6 @@
 
 ## Features
 The web page includes apps that contain weather rapor, quiz app, document for who want to start learn the web tech, ready-to-use responsive designs, to-do list and mini games. This app created as a YMG's project.
-
-
 
 ## Acknowledgements
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
