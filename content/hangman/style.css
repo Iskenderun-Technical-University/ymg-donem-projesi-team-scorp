@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: URL("/../images/space.jpg");
+    background-image: URL("./../../images/space.jpg");
     background-size: contain;
 }
 .main-container{
