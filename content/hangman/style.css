@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: URL("./../../images/space.jpg");
+    background-image: URL("/../images/space.jpg");
     background-size: contain;
 }
 .main-container{
@@ -26,6 +26,8 @@ body{
     margin:auto;
     height: 350px;
     width: 450px;
+    background-color: gray;
+    opacity: 0.6;
 }
 
 .adam-container{ /* figure-container */
@@ -58,6 +60,8 @@ body{
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #504e4e;
+    opacity: 0.6;
 }
 
 .letter{
@@ -108,3 +112,4 @@ body{
 .popup button:focus{
     outline: 0;
 }
+
