@@ -149,3 +149,9 @@ body{
     width: 4%;
     min-width: 60px;
 }
+
+#oyun3{
+    background-color: #2A2B2F;
+    border: 2px dashed purple;
+    border-radius: 40px;
+}

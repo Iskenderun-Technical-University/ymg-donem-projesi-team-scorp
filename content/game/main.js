@@ -54,26 +54,23 @@
     const submitBTN = document.querySelector("#sbmt");
     submitBTN.addEventListener("click",gritter);
 
-    
+
 
     //----find num
-    let target = generateRange0to100();
     let button = document.getElementById("submit_btn");
+    let target = generateRange0to100();
     const record_div = document.getElementById("record");
-    const form = document.getElementsByTagName("form")[1];
     const record_text = document.createElement("P");
     const message_text = document.createElement("P");
     const hint_text = document.createElement("P");
+    const form = document.getElementsByTagName("form")[1];
     const replayBTN = document.createElement("button");
-    const grityIMG = document.createElement("img");
     let IsTextOn = false;
     let counter = 0;
-    grityIMG.src = "./assets/better_than_drake.png";
     record_text.innerHTML = "Tahminler: ";
     message_text.innerHTML = "HATALI TAHMİN";
     hint_text.innerHTML= "";
 
-    // Event Listeners
     button.addEventListener("click", findNumber);
     replayBTN.addEventListener("click", restart);
 
@@ -90,16 +87,9 @@
         replayBTN.style.padding = "5px 9px 5px 9px";
         form.appendChild(replayBTN);
     };
-        alert(target);
-    //Generate gritty image
-    function showGritty(){
-        record_div.insertBefore(grityIMG,message_text);
-        grityIMG.style.width = "250px";
-    };
 
     //restart the game
     function restart(){
-        grityIMG.remove();
         target = generateRange0to100();
         record_text.innerHTML = "Tahminler: ";
         message_text.innerHTML = "HATALI TAHMİN";
@@ -149,7 +139,6 @@
                     message_text.innerHTML = "Kazandınnn :)))";
                     message_text.style.backgroundColor = "green";
                     IsTextOn = false;
-                    showGritty();
                     hint_text.remove();
                     rePlay();
                 }
