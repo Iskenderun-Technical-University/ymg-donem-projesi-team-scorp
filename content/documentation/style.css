@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1B2430;
+    color: #d3d3d3;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+p{
+    font-size: 18px;
+    
+}
+
+hr{
+    margin-top: 100px;
+    margin-bottom:100px ;
+}
+
+#firstHeader{
+    margin-top:50px;
+}
