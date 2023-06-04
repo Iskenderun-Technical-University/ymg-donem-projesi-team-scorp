@@ -16,7 +16,7 @@
 ![screenshot](images/overview.png)
 
 ## Use Case
-![screenshot](images/UML.png)
+![screenshot](images/UML.jpg)
 
 ## Built With
 - [HTML](https://www.w3schools.com/html/default.asp)
