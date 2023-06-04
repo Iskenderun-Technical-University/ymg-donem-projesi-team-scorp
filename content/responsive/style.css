@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url(../../images/space.jpg);
+    background-size: contain;
+    /* */
+    max-width: 1200px;
+    margin: auto
+}
+
+
+/* CSS CLASS */
+.text-center{
+    text-align: center;
+}
+
+.img-border{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* HEADER SECTION */
+.header-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.header-container figure{
+    width: min-content;
+}
+.header-container lottie-player{
+    width: 20%;
+    min-width: 200px;
+}
+
+header h5{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* ARTICLE SECTION */
+article p{
+    padding: 5rem 5rem 2rem 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+article a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #FF8C00;
+}
+
+
+/* FIGURE SECTION */
+main figure{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+main figure img {
+    margin: 20px;
+}
+
+figure img{
+    width: 250px;
+}
+
+
+
+/*  SECTION */
+footer{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+}
+nav a{
+    font-size: 20px;
+    margin: 20px;
+}
+form{
+    width: max-content;
+    margin: 0 auto 1rem auto;
+}
+form button{
+    padding: 1rem;
+    color: #FF8C00;
+    background-color: transparent;
+}
