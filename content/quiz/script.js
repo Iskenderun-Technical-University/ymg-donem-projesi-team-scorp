@@ -1,38 +1,38 @@
 const questions = [
     {
-        question: "2.Dünya Savaşı hangi ülkenin işgaliyle başlamıştır?",
+        question: "Aşağıdakilerden hangisi obje yönümlü dildir?",
         answers: [
-            { text: "Vatikan", correct: false},
-            { text: "Endonezya", correct: false},
-            { text: "Polonya", correct: true},
-            { text: "Avusturya", correct: false},
+            { text: "C++", correct: false},
+            { text: "JavaScript", correct: false},
+            { text: "Java", correct: false},
+            { text: "Hepsi", correct: true},
         ]
     },
     {
-        question: "Dünyadaki en küçük ülke hangisidir?",
+        question: "CSS'de metni ortalamak için hangi özellik kullanılır?",
         answers: [
-            { text: "Vatikan", correct: true},
-            { text: "Şri Lanka", correct: false},
-            { text: "Peru", correct: false},
-            { text: "Faroe Adaları", correct: false},
+            { text: "Text-align:center;", correct: true},
+            { text: "justify-content:center;", correct: false},
+            { text: "align-items:center", correct: false},
+            { text: "Hepsi", correct: false},
         ]
     },
     {
-        question: "Dünyada en çok konuşulan dil hangisidir?",
+        question: "Aşağıdakilerden hangisi bir programlama dili değildir?",
         answers: [
-            { text: "İngilizce", correct: false},
-            { text: "Çince", correct: true},
-            { text: "Japonca", correct: false},
-            { text: "Portekizce", correct: false},
+            { text: "Java", correct: false},
+            { text: "HTML", correct: true},
+            { text: "C++", correct: false},
+            { text: "Python", correct: false},
         ]
     },
     {
-        question: "insan başına düşen metre kare hesabına göre en kalabalık ülke hangisidir?",
+        question: "Bir website'ye CSS kodlarını farkli bir stil dosyasından entegre edersek hangi yöntemi kullanmış oluruz?",
         answers: [
-            { text: "Çin", correct: false},
-            { text: "Bangladeş", correct: true},
-            { text: "Nepal", correct: false},
-            { text: "Butan", correct: false},
+            { text: "internal", correct: false},
+            { text: "external", correct: true},
+            { text: "inline", correct: false},
+            { text: "hiçbirisi", correct: false},
         ]
     }
 ];
