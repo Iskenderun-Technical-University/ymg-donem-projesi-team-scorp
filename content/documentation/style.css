@@ -5,7 +5,9 @@
 }
 
 body{
-    background-color: #1B2430;
+    background-image: url("../../images/space.jpg");
+    background-size: contain;
+    background-color: antiquewhite;
     color: #d3d3d3;
 }
 
@@ -18,15 +20,39 @@ h3{
 }
 
 p{
-    font-size: 18px;
-    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: 900;
 }
 
-hr{
-    margin-top: 100px;
-    margin-bottom:100px ;
+
+nav{
+    display: flex;
+    justify-content:space-evenly;   
+    margin: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
 }
 
-#firstHeader{
-    margin-top:50px;
+nav a{
+    color: aliceblue;
+    text-decoration: none;
 }
+
+.container{
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    padding: 25px 70px 25px 70px;
+    margin: 25px 0px 25px 0px;
+    background: rgb(41, 42, 46, .5);
+}
+
+.container h3{
+    line-height: 80px;
+}
+.container .X{
+    font-size: 80px;
+    text-align: center;
+    color: blueviolet;
+}
+

@@ -5,344 +5,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/content/documentation/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="/content/documentation/main.js"></script>
     <title>Yazılıma Başla! | CMS Group</title>
 </head>
-
 <body>
-    <h3 id="firstHeader"> HTML Nedir?</h3>
-    <p>Html (HyperText Markup Language / Hareketli Metin İşaretleme Dili), internet dökümanları oluşturmaya yarayan bir
-        dildir.
-        Html, belgelerin birbirine nasıl bağlanacaklarını ve belge içindeki metin, resim ve benzeri nesnelerin nasıl
-        yerleştirilecekleri belirleyen ve etiket(tag) denilen kod parçacıklarından oluşan bir sistemdir.
+    <nav>
+        <a href="#html1">HTML Nedir?</a>
+        <a href="#html2">HTML Genel Yapısı</a>
+        <a href="#html5" >Arkaplan Ayarları</a>
+        <a href="#html6">Resim Ekleme & Hizalama</a>
+        <a href="#html8">Tablolar</a>
+    </nav>
 
-    <p>Html bir programlama dili değildir. Herhangi bir programlama mantığı taşımaz. Veriler içine yerleştirilen
-        etiketler, metnin dolayısıyla belgenin browser tarafından verileri nasıl işleyeneceğini belirler.
-    <p>Html dökümanı hazırlamak için gerekli olan tek şey bir editördür. Bunun için piyasada bulunan kod veya görsel
-        tabanlı bazı programları kullanılabilirsiniz.Bunun yanı sıra, bir editörünüz yoksa, html dökümanı hazırlamak
-        için size bir notepad bile yeter. Html dökümanınızı hazırladıktan sonra .htm veya .html uzantısı ile
-        kaydettiğinizde bir html dökümanına sahip olmuş olursunuz.
+    <div class="container">
+        <h3 id="html1">HTML Nedir?</h3>
+        <p>Html (HyperText Markup Language / Hareketli Metin İşaretleme Dili), internet dökümanları oluşturmaya yarayan bir
+            dildir. Html, belgelerin birbirine nasıl bağlanacaklarını ve belge içindeki metin, resim ve benzeri nesnelerin nasıl
+            yerleştirilecekleri belirleyen ve etiket(tag) denilen kod parçacıklarından oluşan bir sistemdir.
+        </p>
+        <br>
+        <p>Html bir programlama dili değildir. Herhangi bir programlama mantığı taşımaz. Veriler içine yerleştirilen
+            etiketler, metnin dolayısıyla belgenin browser tarafından verileri nasıl işleyeneceğini belirler.
+        </p>
+        <br>
+        <p>Html dökümanı hazırlamak için gerekli olan tek şey bir editördür. Bunun için piyasada bulunan kod veya görsel
+            tabanlı bazı programları kullanılabilirsiniz.Bunun yanı sıra, bir editörünüz yoksa, html dökümanı hazırlamak
+            için size bir notepad bile yeter. Html dökümanınızı hazırladıktan sonra .htm veya .html uzantısı ile
+            kaydettiğinizde bir html dökümanına sahip olmuş olursunuz.
+        </p>
+    </div>
 
-        <hr>
+    <div class="container">
+        <h3 id="html2">HTML'in Genel Yapısı</h3>
+        <p>
+            Html'in genel yapısı, aşağıda görüldüğü gibidir. Html dökümanları "html"...  
+            "/html" etiketleri arasında yer alır.
+            Baş (head) ve gövde(body) olmak üzere iki ana kısımdan oluşur.
+            Head kısmında sayfa ile ilgili genel tanımlamalar yapılır. Sayfada görüntülenmesi istenilen nesneler
+            "body" .... "/body" etiketleri
+            arasına yazılır. Sayfaya yerleştirmek istenen resim, metin, tablo ve benzeri
+            tüm nesneler "body" ... "/body" etiketleri arasında yer alır.
+        </p>
+    </div>
 
-    <h3>HTML'in Genel Yapısı</h3>
-    <p>Html'in genel yapısı, aşağıda görüldüğü gibidir. Html dökümanları "html"...
-
-        "/html" etiketleri arasında yer alır.
-        Baş (head) ve gövde(body) olmak üzere iki ana kısımdan oluşur.
-        Head kısmında sayfa ile ilgili genel tanımlamalar yapılır. Sayfada görüntülenmesi istenilen nesneler
-        "body" .... "/body" etiketleri
-        arasına yazılır. Sayfaya yerleştirmek istenen resim, metin, tablo ve benzeri
-        tüm nesneler "body" ... "/body" etiketleri arasında yer alır.
-
-        <hr>
-
-    <h3>Metin Biçimlendirme Etiketleri</h3>
-    <p>Html'de metin stillerini belirlemenin üç yolu vardır.Bunlar;
-    <ul>
-        <li>Düzenlenmek istenilen metinin başına ve sonuna gerekli metin düzenleme etiketlerinin konulması ile yapılan
-            metin stilidir.Bu yöntem satır içi biçimlendirme olarakta bilinir.</li>
-        <li>Sayfanın head kısmına koyulan stillere body bölümden atıf yapılarak metin biçimlemedir. Bu yöntem gömülü
-            biçimlendirme olarak adlandırılır.</li>
-        <li> Html dökümanının dışında başka bir stil dosyası oluşturularak, stil için bu dosyanın kullanıldığı
-            yöntemdir. Bu yöntemde Cascading Stil Sheets(Yığılmalı Stil kağıtları-CSS) olarak adlandırılır.</li>
-    </ul>
-    Yukarıdaki metotlardan ilk metotta her metin için ayrı ayrı stil belirtirken ikinci ve üçüncü metodlarda stil bir
-    defa belirlenir ve bu stilleri istediğimiz metne uygulayabiliriz. Burada önemli olan bir diğer husus da ilk metodu
-    tüm browserlar sorunsuz yorumlarken, 2. ve 3. metotları farklı browserların, değişik şekillerde yorumlamasıdır. Bu
-    nedenlerden dolayı biz derslerimizde satır içi biçimlendirme olarak adlandırılan ilk metottan bahsedeceğiz.
-
-    <h5>Başlık Etiketleri</h5>
-    <p>Html'de altı adet başlık etiketi vardır.Bu etiketlerin birbirinden farkı, boyutlarıdır.Başlık etiketi uygulanacak
-        metin "h1" ... "h6" etiketlerinden biri ile başlar ve aynı numaralı başlık etiketi ile kapatılır.
-    <p> En büyük başlık etiketi "h1" etiketidir ve bu "h6" etiketine doğru gidildikçe küçülür. Örneğin:
-    <ul>
-        <li>h1: <h1>Başlık</h1>
-        </li>
-        <li>h2: <h2>Başlık</h2>
-        </li>
-        <li>h3: <h3>Başlık</h3>
-        </li>
-    </ul> <br>
-
-    <h5>Paragraf Etiketi</h5>
-    <p>Html'de paragraf etiketi "p"...."/p" dir. Bu etiketler araındaki metin paragraf özelliği kazanır. Etiket
-        sonlandırıldığında, takip eden metin
-        bir satır boşluk bırakılarak, satır başına yazılır.
-
-    <h5>"br" Etiketi</h5>
-    <p>"br" etiketi, satır başı yapmak için kullanılır. Browser bu etiketi görünce, geri kalan nesneleri bir altsatırdan
-        devam ettirir. "br" etiketi kapatılmadan kullanılan bir etikettir. Diğer bir çok etiket gibi "/" işareti
-        ile sonlandırılmaz.
-
-    <h5>Diğer Etiketler</h5>
-    <p>Html de, metinlerde kullanılacak diğer metin biçimlendirme etiketleri; "b", "i" ve "u"'dur.
-    <ul>
-        <li>"b" .... "/b" Aradaki metni koyu yapmaya yarar.(<b>bold</b>) </li>
-
-        <li>"i" .... "/i" Aradaki metne eğik özelliği vermeye yarar.(<i>italic</i>)</li>
-
-        <li> "u" .... "/u" Aradaki metnin altı çizili hale gelmesini sağlar.(<u>underline</u>)</li>
-    </ul>
-
-    <h5>Font Etiketleri</h5>
-    <p>Metinlere ait font ayarları "font" ..... "/font" etiketi ile yapılır.
-
-    <p>Font etiketinin kullanımı; <font face="5" size="3" color="red"> "font face= "..." size= "..." color= "..."> ...
-            "/font" </font>
-
-    <p>Font etiketinin parametreleri;
-
-        <li>face= yazıtipinin adı (arial, tahoma, verdana, ...)</li>
-        <li>size= yazının büyüklüğü (1-7 arası)</li>
-        <li>color= yazının rengi (renkleri ingilizce karşılıkları veya RGB renk değeri)</li>
-
-    <p>RGB, red-green-blue renklerinin baş harfleridir. Tüm renkler, bu üç ana rengin belli oranlarla harmanlanması
-        sonucu
-        ortaya çıkar.Bu nedenle metinlere renk verilirken ya renklerin ingilizce karşılıkları yada başına # işareti
-        koyarak
-        RGB ye ait hexidecimal değerler yazılır.
-
-    <p>Yazı tipini belirlemek için face parametresi kullanılır. Genellikle web tasarımında verdana, tahoma ve arial gibi
-        yazıtipleri tercih edilir. Bunun nedeni, bu yazıtiplerinin okuma kolaylığına ve görüntü güzelliğine sahip
-        olmasıdır.
-
-    <p>Yazı büyüklüğü, size parametresi ile ayarlanır ve yedi adet font büyüklüğü vardır. 1 ile 7 arası bu değerler,
-        yazının
-        inch veya piksel olarak büyüklüğü değil, html'e ait sayı değerleridir.
-
-        <hr>
-
-    <h3>Arkaplan Ayarları</h3>
-    <p>Html sayfalarına ait arkaplan(background) ayarları "body" etiketine eklenen parametreler yardımıyla yapılır.
-        Body etiketine eklenecek parametreler ile arkaplana istediğimiz rengi verebilir, istediğimiz resmi arkaplana
-        yerleştirebiliriz.
-
-    <h5>Arkaplan Rengini Değiştirme</h5>
-    "body bgcolor= "color"> .......... "/body" <p> Arkaplan rengini değiştirmede, yazı rengini değiştirmede olduğu gibi
+    <div class="container">
+        <h3 id="html5">Arkaplan Ayarları</h3>
+        <p>
+            Html sayfalarına ait arkaplan(background) ayarları "body" etiketine eklenen parametreler yardımıyla yapılır.
+            Body etiketine eklenecek parametreler ile arkaplana istediğimiz rengi verebilir, istediğimiz resmi arkaplana
+            yerleştirebiliriz.
+        </p>
+        <h5 style="font-size: 25px; color:antiquewhite; line-height: 45px; font-family: 'Courier New', Courier, monospace; ">Arkaplan Rengini Değiştirme</h5>
+        "body bgcolor= "color"> .......... "/body" <p> Arkaplan rengini değiştirmede, yazı rengini değiştirmede olduğu gibi
         renklere ait hexidecimal kodlar veya renklerin ingilizce karşılıkları kullanılır. Örnek olarak;
-    <ul>
-        <li> "body bgcolor="gold"> .......... "/body"
-</body>
-</li>
-
-<li> "body bgcolor="#808080"> .......... "/body" </body>
-</li>
-</ul>
-
-<h5>Arkaplana Resim Ekleme</h5>
-<p> "body background= "url"> .......... "/body"
-<p>Arkaplana resim ekleme konusunda dikkat edilmesi gereken nokta eklenecek resme ait yolu doğru bir şekilde
-    belirtmektir. Web tasarımına yeni başlayanlar, genelde kullandığı html dökümanı ile kullandığı resimleri aynı klasör
-    içinde barındırırlar. Html dökümanı ile bu html dökümanına eklenecek resim aynı klasörde ise, url olarak direkt
-    resmin adını ve uzantısını yazmak yeterlidir. Örnek:
-
-    <li> "body background="zemin.gif">.......... "/body" gibi. </li>
-<p>Resimlerin farklı bir klasörde bulunması, web tasarımında doğacak karışıklıkları önlemede yararlı bir yöntemdir. Bu
-    gibi durumlarda, resimlere ait adreslemelede dikkatli olamk gerekir. Resmin yolunu belirlerken, adres yolunun tamamı
-    yazılabilir. (Örneğin; C:\OEM\Dersler\Resimler\zemin.gif gibi.) Bu yol tanımlaması, html dökümanlarının bulunduğu
-    bilgisayarda sorunsuz bir şekilde çalışır, fakat; başka bir bilgisayarda veya yapılan tasarım bir server'a
-    gönderildiğinde, belirtilen bu yol bulunamayacağı için resimlerin yerinde boşluk ve kırmızı çarpı işaretleri
-    görülür. Bu sorunları yaşamamak için web tasarımında göreceli adresleme kullanılır. Kullanım şekli aşağıdaki
-    gibidir.
-
-    <li> "body bgcolor= "color" background="url" > .......... "/body" </li>
-    <hr>
-
-<h3> Resim Ekleme & Hizalama</h3>
-<h5> Resim Ekleme</h5>
-<p>Resimler web tasarımında sıklıkla kullanılan ve görüntü güzelliği sağlayan nesnelerdir. Bu dersimizde html
-    dökümanlarına nasıl resim eklenir ve eklenen resimler sayfa içinde nasıl hizalanır, bunlar hakkında bilgi vereceğiz.
-<p>Resim ekleme işlemi için, " img src="url" " etiketi kullanlır. Url'nin yazımında daha önceki derste anlattığımız
-    göreceli adres yolu verme yönteminin kullanılması tercih edilir. Sayfamıza eklenecek resimlerin boyutlarını, sayfaya
-    eklemeden ayarlayabileceğimiz gibi, bu işlemi resmimizi sayfamıza eklerken yazacağımız parametreler yardımıyla da
-    yapabiliriz.
-
-    <li> " img src="resimler/gunes.jpg" height="400" width="475" " </li>
-    <img src="/content/game/assets/better_than_drake.png" height="200" width="275">
-
-<p>Yukarıdaki etiket sayesinde sayfaya yüksekliği 400 piksel, genişliği 475 piksel olan gunes.jpg isimli bir resim
-    eklenmiş olur. Resim seçiminde, seçtiğimiz resmin gif yada jpg formatında olması zorunluluğu dışında herhangi bir
-    kısıtlama yoktur.
-
-<h5>Hizalama</h5>
-<p>Html dökümanımıza eklediğimiz resim, yazı, tablo ve benzeri nesneleri sayfa içinde istediğimiz yere yerleştirmek için
-    hizalama işine yarayan yardımcı parametreler kullanılır. Bu parametreler ilgili etikete eklenerek, istenilen
-    hizalamalar yapılabilir.
-
-<ul>
-    <li>align = "left" : Sola hizalama için kullanılır.Varsayılan hizalama sola dayalıdır.Hiçbir şey belirtilmediği
-        zaman nesneler sola dayalı olarak sayfaya eklenir.</li>
-
-    <li>align = "right" : Sağa hizalama için kullanılır.</li>
-
-
-    <li>align = "center" : Nesneleri ortalamak için kullanlır.Ortalama işlemi için "center" ..... "/center" etiketi de
-        kullanılabilir, fakat bu etiket bazı browserlar tarafından yorumlanmayabilir.</li>
-</ul>
-<hr>
-
-<h3> Listeler </h3>
-<p>Html ile üç türlü liste hazırlanabilir.
-
-<ul>
-    <li> Sıralı Listeler (Ordered list)</li>
-    <li> Sırasız Listeler (Unordered list)</li>
-    <li> Tanımlama Listeleri (Definition list)</li>
-</ul>
-<p>Sıralı listeler rakam veya harf yada her ikisini içiçe kullanarak liste oluşturmamızı, sırasız listeler rakam veya
-    harf
-    yerine madde imleri koyarak liste oluşturmamızı sağlar. Tanımlama listeleri ise bir listeden çok kalabalık
-    metinlerde
-    okumayı kolaylaştırmaya yardımcı olabilecek bir araçtır.
-
-<h5>Sıralı Listeler</h5>
-<p>Liste içine alınacak metinler "ol" ... "/ol" etiketleri arasına alınarak yazılır. Bu etiketler listenin
-    başladığını ve bittiğini belirtir. Listenin maddelerinin başına ise "li" etiketi getirilir.
-
-<p>"ol" etiketine parametreler ekleyebiliriz.
-<ul>
-    <li>type = Listenin rakamla mı harfle mi başlayacağını belirtmek için kullanlır.</li>
-
-    <li> start = Listenin hangi harf yada rakam ile başlayacağını belirtmek için kullanılır.</li>
-</ul>
-
-Sıralı listelemede bu parametrelerin kullanılması zorunlu değildir. Varsayılan olarak sıralı listeler, rakamla
-gösterilir ve 1 ile başlar. Örneğin:
-<p>Sirali Liste 1:<br>
-<ol>
-    <li>Bilgisayar
-    <li>Elektronik
-    <li>Otomotiv
-</ol>
-
-<br>Sirali Liste 2:<br>
-<ol type="a">
-    <li>Bilgisayar
-    <li>Elektronik
-    <li>Otomotiv
-</ol>
-
-<br>Sirali Liste 3:<br>
-<ol type="1" start="3">
-    <li>Bilgisayar
-    <li>Elektronik
-    <li>Otomotiv
-</ol>
-
-<h5>Sırasız Listeler</h5>
-
-<p>Sırasız listelemede de aynı mantık kullanılır.Fark, listeleme yaparken maddelerin başına harf, rakam gibi unsurlar
-    yerine yuvarlak, kare, daire gibi unsurların kullanabilmesidir.
-    "ol" etiketi yerine "ul" etiketini kullanılır, liste maddeleri için kullandığımız "li" etiketi burada da geçerlidir.
-
-<p> Type parametresinde kullanıbilecek unsurlar; disc (içi dolu daire), circle (içi boş daire), square (içi dolu
-    kare)'dir.
-    <br> <br>
-    Sırasız Liste 1:<br>
-<ul>
-    <li>Bilgisayar
-    <li>Elektronik
-    <li>Otomotiv
-</ul>
-<p> Listeler iç içe yapılabilir. Örneğin; <br> <br> Sırasız Liste 2:<br>
-<ul type="square">
-    <li>Bilgisayar
-        <ul type="circle">
-            <li>Donanim
-            <li>Yazilim
+        <ul>
+            <li> "body bgcolor="gold"> .......... "/body" </li>
+            <li> "body bgcolor="#808080"> .......... "/body"</li>
         </ul>
-    <li>Elektronik
-    <li>Otomotiv
-</ul>
 
-<hr>
+        <h5 style="font-size: 25px; color:antiquewhite; line-height: 45px; font-family: 'Courier New', Courier, monospace; ">Arkaplana Resim Ekleme</h5>
+        <p> "body background= "url"> .......... "/body"</p>
+        <p>
+            Arkaplana resim ekleme konusunda dikkat edilmesi gereken nokta eklenecek resme ait yolu doğru bir şekilde
+            belirtmektir. Web tasarımına yeni başlayanlar, genelde kullandığı html dökümanı ile kullandığı resimleri aynı klasör
+            içinde barındırırlar. Html dökümanı ile bu html dökümanına eklenecek resim aynı klasörde ise, url olarak direkt
+            resmin adını ve uzantısını yazmak yeterlidir. Örnek:
+        </p>
+        <li> "body background="zemin.gif">.......... "/body" gibi. </li>
+        <p>
+            Resimlerin farklı bir klasörde bulunması, web tasarımında doğacak karışıklıkları önlemede yararlı bir yöntemdir. Bu
+            gibi durumlarda, resimlere ait adreslemelede dikkatli olamk gerekir. Resmin yolunu belirlerken, adres yolunun tamamı
+            yazılabilir. (Örneğin; C:\OEM\Dersler\Resimler\zemin.gif gibi.) Bu yol tanımlaması, html dökümanlarının bulunduğu
+            bilgisayarda sorunsuz bir şekilde çalışır, fakat; başka bir bilgisayarda veya yapılan tasarım bir server'a
+            gönderildiğinde, belirtilen bu yol bulunamayacağı için resimlerin yerinde boşluk ve kırmızı çarpı işaretleri
+            görülür. Bu sorunları yaşamamak için web tasarımında göreceli adresleme kullanılır. Kullanım şekli aşağıdaki
+            gibidir.
+        </p>
+        <li> "body bgcolor= "color" background="url" > .......... "/body" </li>
+    </div>
 
-<h3>Tablolar</h3>
-<p>Tablolar, sayfaları satırlara ve sütunlara bölmek ya da metin veya grafiklerin sayfada istediğimiz yerde durmasını
-    sağlamak için kullanabileceğimiz Html in en önemli yapıtaşlarındandır.
-<p>Tablolar satırlar ve sütunlardan meydana gelir. Html de tablo oluşturmak için "table", satır oluşturmak için "tr",
-    sütun oluşturmak için "td" etiketleri kullanılır.
-<p>Tablo oluşturma etiketinin genel yapısı:
+    <div class="container">
+        <h3 id="html6"> Resim Ekleme & Hizalama</h3>
+        <h5 style="font-size: 25px; color:antiquewhite; line-height: 45px; font-family: 'Courier New', Courier, monospace; "> Resim Ekleme</h5>
+        <p>Resimler web tasarımında sıklıkla kullanılan ve görüntü güzelliği sağlayan nesnelerdir. Bu dersimizde html
+            dökümanlarına nasıl resim eklenir ve eklenen resimler sayfa içinde nasıl hizalanır, bunlar hakkında bilgi vereceğiz.
+        <p>Resim ekleme işlemi için, " img src="url" " etiketi kullanlır. Url'nin yazımında daha önceki derste anlattığımız
+            göreceli adres yolu verme yönteminin kullanılması tercih edilir. Sayfamıza eklenecek resimlerin boyutlarını, sayfaya
+            eklemeden ayarlayabileceğimiz gibi, bu işlemi resmimizi sayfamıza eklerken yazacağımız parametreler yardımıyla da
+            yapabiliriz.
 
-    "table border="sayı" height="oran veya sayı" width="oran veya sayı" align="hiza" bgcolor="renk"> ........ "/table"
-<p> Buradaki border = tablonun kenar kalınlığı, height = tablonun yükseliği, width = tablonun genişliği, align =
-    tablonun sayfa içindeki hizası, bgcolor = tablonun arkaplan rengi'dir. Örnek olarak:
+            <li> " img src="resimler/gunes.jpg" height="400" width="475" " </li>
+            <img src="/content/game/assets/better_than_drake.png" height="200" width="275">
 
-<p>1.Tablo (kod hali)<br>
-    "table"
-    "tr"
-    "td"1.Hücre"/td"
-    "td"2.Hücre"/td"
-    "/tr"
-    "tr"
-    "td"3.Hücre"/td"
-    "td"4.Hücre"/td"
-    "/tr"
-    "/table"
-    <br> <br>
-    2.Tablo<br>
-<table border="1" align="left">
-    <tr>
-        <td>1.Hücre</td>
-        <td>2.Hücre</td>
-    </tr>
-    <tr>
-        <td>3.Hücre</td>
-        <td>4.Hücre</td>
-    </tr>
-</table> <br> <br> <br> <br>
+        <p>Yukarıdaki etiket sayesinde sayfaya yüksekliği 400 piksel, genişliği 475 piksel olan gunes.jpg isimli bir resim
+            eklenmiş olur. Resim seçiminde, seçtiğimiz resmin gif yada jpg formatında olması zorunluluğu dışında herhangi bir
+            kısıtlama yoktur.
 
-<p>
-<h5>Tablolarda Satır ve Sutün Birleştirme</h5>
-<p>Tablo oluştururken, istenilen satır veya sütunlar birleştirilebilir.
-<dl>
-    <dd>rowspan = "Birleştirilecek satır sayısı"</dd>
+        <h5 style="font-size: 25px; color:antiquewhite; line-height: 45px; font-family: 'Courier New', Courier, monospace; ">Hizalama</h5>
+        <p>Html dökümanımıza eklediğimiz resim, yazı, tablo ve benzeri nesneleri sayfa içinde istediğimiz yere yerleştirmek için
+            hizalama işine yarayan yardımcı parametreler kullanılır. Bu parametreler ilgili etikete eklenerek, istenilen
+            hizalamalar yapılabilir.
 
-    <dd>colspan&nbsp; = "Birleştirilecek sütun sayısı"</dd>
-</dl>
-Örnekler;
+        <ul>
+            <li>align = "left" : Sola hizalama için kullanılır.Varsayılan hizalama sola dayalıdır.Hiçbir şey belirtilmediği
+                zaman nesneler sola dayalı olarak sayfaya eklenir.</li>
 
-<li>
-    <td rowspan="2">Hücre içeriği</td> ==> İki satır birleştirilmiş
-</li>
-<li>
-    <td colspan="3">Hücre içeriği</td> ==> Üç sütun birleştirilmiş
-</li>
-<table border="1" align="center" width="200">
-    <tr>
-        <td>1</td>
-        <td colspan="2">2</td>
-        <td colspan="2">3</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-    </tr>
-    <tr>
-        <td rowspan="2">9</td>
-        <td>10</td>
-        <td>11</td>
-        <td>12</td>
-        <td>13</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-    </tr>
-</table>
-
-<hr>
+            <li>align = "right" : Sağa hizalama için kullanılır.</li>
 
 
+            <li>align = "center" : Nesneleri ortalamak için kullanlır.Ortalama işlemi için "center" ..... "/center" etiketi de
+                kullanılabilir, fakat bu etiket bazı browserlar tarafından yorumlanmayabilir.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h3 id="html8">Tablolar</h3>
+        <p>Tablolar, sayfaları satırlara ve sütunlara bölmek ya da metin veya grafiklerin sayfada istediğimiz yerde durmasını
+            sağlamak için kullanabileceğimiz Html in en önemli yapıtaşlarındandır.
+        <p>Tablolar satırlar ve sütunlardan meydana gelir. Html de tablo oluşturmak için "table", satır oluşturmak için "tr",
+            sütun oluşturmak için "td" etiketleri kullanılır.
+        <p>Tablo oluşturma etiketinin genel yapısı:
 
+            "table border="sayı" height="oran veya sayı" width="oran veya sayı" align="hiza" bgcolor="renk"> ........ "/table"
+        <p> Buradaki border = tablonun kenar kalınlığı, height = tablonun yükseliği, width = tablonun genişliği, align =
+            tablonun sayfa içindeki hizası, bgcolor = tablonun arkaplan rengi'dir. Örnek olarak:
+
+        <p>1.Tablo (kod hali)<br>
+            "table"
+            "tr"
+            "td"1.Hücre"/td"
+            "td"2.Hücre"/td"
+            "/tr"
+            "tr"
+            "td"3.Hücre"/td"
+            "td"4.Hücre"/td"
+            "/tr"
+            "/table"
+            <br> <br>
+            2.Tablo<br>
+        <table border="1" align="left">
+            <tr>
+                <td>1.Hücre</td>
+                <td>2.Hücre</td>
+            </tr>
+            <tr>
+                <td>3.Hücre</td>
+                <td>4.Hücre</td>
+            </tr>
+        </table> <br> <br> <br> <br>
+
+        <p>
+        <h5 style="font-size: 25px; color:antiquewhite; line-height: 45px; font-family: 'Courier New', Courier, monospace; ">Tablolarda Satır ve Sutün Birleştirme</h5>
+        <p>Tablo oluştururken, istenilen satır veya sütunlar birleştirilebilir.
+        <dl>
+            <dd>rowspan = "Birleştirilecek satır sayısı"</dd>
+
+            <dd>colspan&nbsp; = "Birleştirilecek sütun sayısı"</dd>
+        </dl>
+        Örnekler;
+
+    <li>
+        <td rowspan="2">Hücre içeriği</td> ==> İki satır birleştirilmiş
+    </li>
+    <li>
+        <td colspan="3">Hücre içeriği</td> ==> Üç sütun birleştirilmiş
+    </li>
+    <table border="1" align="center" width="200">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+        </tr>
+    </table>
+    </div>
+    <div class="container">
+        <p class="X">.</p>
+        <p class="X">.</p>
+        <p class="X">.</p>
+    </div>
 </body>
-
-
 </html>
