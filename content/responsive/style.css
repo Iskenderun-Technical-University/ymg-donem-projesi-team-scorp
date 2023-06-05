@@ -57,6 +57,8 @@ article a{
     font-weight: 700;
     text-decoration: none;
     color: #FF8C00;
+    padding: 12px 4px;
+    border: 1px solid #FF8C00;
 }
 
 
@@ -89,6 +91,7 @@ nav{
 nav a{
     font-size: 20px;
     margin: 20px;
+    cursor: pointer;
 }
 form{
     width: max-content;
@@ -98,4 +101,5 @@ form button{
     padding: 1rem;
     color: #FF8C00;
     background-color: transparent;
+    cursor: pointer;
 }

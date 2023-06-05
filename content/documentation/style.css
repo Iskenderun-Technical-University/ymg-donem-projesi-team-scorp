@@ -37,6 +37,15 @@ nav{
 nav a{
     color: aliceblue;
     text-decoration: none;
+    padding: 10px 5px;
+    border: 2px solid gray;
+}
+
+nav a:hover{
+
+    color: black;
+    background-color:aliceblue ;
+    transition: .3s;
 }
 
 .container{
